@@ -2,6 +2,8 @@
 
 1) Debemos ingresar a la pagina oficial de .NET y seleccionamos Download
 
+![alt text](https://github.com/CesarHLR/POO/blob/master/Imagenes/.NET.png)
+
 2) Tenemos que elegir dependiendo que sistema operativo manejemos, en mi caso es windows
 
 3) Seleccionamos Download .NET CORE SDK de las opciones de Build Apps
