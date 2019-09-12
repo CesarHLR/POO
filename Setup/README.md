@@ -34,23 +34,23 @@
 
 5) Seleccionamos la ruta en la que queremos que se instale
 
-5) Seleccionas las tareas adicionales que queremos que haga durante la instalacion
+6) Seleccionas las tareas adicionales que queremos que haga durante la instalacion
 
 ![alt text](https://github.com/CesarHLR/POO/blob/master/Imagenes/vsc%20tareas.PNG)
 
-6) Simplemente le damos en instalar
+7) Simplemente le damos en instalar
 
-7) Una vez instalada le damos en finalizar y listo
+8) Una vez instalada le damos en finalizar y listo
 
 ## Configuración
 
 1) Simplemente abrimos visual studio code
 
-2) Nos dirigimos a la parte superior izquierda
+2) Nos dirigimos a la parte superior izquierda                                          y seleccionamos la opcion de extensiones
 
-![alt text](https://github.com/CesarHLR/POO/blob/master/Imagenes/vsc%20opciones.PNG)
+![alt text](https://github.com/CesarHLR/POO/blob/master/Imagenes/vsc%20opciones.PNG)   ![alt text](https://github.com/CesarHLR/POO/blob/master/Imagenes/vsc%20extensiones.PNG)
 
-y seleccionamos la opcion de extensiones
+
 
 ![alt text](https://github.com/CesarHLR/POO/blob/master/Imagenes/vsc%20extensiones.PNG)
 
@@ -66,7 +66,11 @@ y seleccionamos la opcion de extensiones
 
 3) Seleccionamos nuestro sistema operativo, en mi caso es Windows
 
+![alt text](https://github.com/CesarHLR/POO/blob/master/Imagenes/git%20SO.PNG)
+
 4) Des la opciones de "Git For Windows Setup" seleccionamos una dependiendo si nuestra computadora es de 32 o 64 bits
+
+![alt text](https://github.com/CesarHLR/POO/blob/master/Imagenes/git%20bits.PNG)
 
 5) Una vez descargada, ejecutamos el instalador de Git
 
