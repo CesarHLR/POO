@@ -86,6 +86,20 @@ y seleccionamos la opcion de extensiones
 
 9) Damos next a las demas ventanas, todo lo dejamos por default e instalamos
 
+## Conectar Git. a github y VSC
+
+1) Dentro de tu repositorio en GitHub seleccionamos donde dice clonar o descargar(Copiamos el link del repositorio)
+
+![alt text](https://github.com/CesarHLR/POO/blob/master/Imagenes/git%20clonar.png)
+
+2) Abrimos Visual Studio Code
+
+3) Seleccionamos la opcion "View" y dentro de ella "Command Palette"
+
+4) Te abrira un buscador, en el escribimos Git y nos saldran varias opciones, la que nos interesa es la que dice "Git: Clone"
+
+5) Una vez seleccinada la opcion, pegamos el link de nuestro repositorio y seleccionamos una carpeta en la cual se guardara el codigo
+
 
 
 
