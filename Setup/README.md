@@ -80,11 +80,11 @@ y seleccionamos la opcion de extensiones
 
 7) Y despues le damos a next a las primeras 4 ventanas, dejamos sus opciones por default 
 
-8)En la quinta ventana seleccionamos esta opcion
+8) En la quinta ventana seleccionamos esta opcion
 
 ![alt text](https://github.com/CesarHLR/POO/blob/master/Imagenes/git%20opc.PNG)
 
-9)Damos next a las demas ventanas, todo lo dejamos por default e instalamos
+9) Damos next a las demas ventanas, todo lo dejamos por default e instalamos
 
 
 
