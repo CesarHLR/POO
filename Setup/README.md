@@ -46,11 +46,11 @@
 
 1) Simplemente abrimos visual studio code
 
-2) Nos dirigimos a la parte superior izquierda                                          y seleccionamos la opcion de extensiones
+2) Nos dirigimos a la parte superior izquierda                                          
 
-![alt text](https://github.com/CesarHLR/POO/blob/master/Imagenes/vsc%20opciones.PNG)   ![alt text](https://github.com/CesarHLR/POO/blob/master/Imagenes/vsc%20extensiones.PNG)
+![alt text](https://github.com/CesarHLR/POO/blob/master/Imagenes/vsc%20opciones.PNG)   
 
-
+y seleccionamos la opcion de extensiones
 
 ![alt text](https://github.com/CesarHLR/POO/blob/master/Imagenes/vsc%20extensiones.PNG)
 
