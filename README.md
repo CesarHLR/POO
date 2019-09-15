@@ -1,7 +1,10 @@
 # POO
-Folder de evidencias
+Tecnológico   Nacional   de   México
+Instituto Tecnológico de Tijuana
 
-César Humberto López Roblero #19210519
+Ingeniería en sistemas computacionales
+
+César Humberto López Roblero 19210519
 
 ## TAREAS
 
