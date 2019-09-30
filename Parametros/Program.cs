@@ -2,30 +2,30 @@
 
 namespace Parametros
 {
- class Futbol
+ class Equipo
     {
-        public string Equipo;
+        public string nombre;
         
-        public Futbol()
+        public Equipo()
         {
-          Equipo="Real Madrid";
+          nombre="Real Madrid";
           
         }
-      
-    }
-    class Equipo
-    {
-        //Abreviar nombre del equipo mediante pase de parametros Ref
-        public static void CambiaSiglas(ref Futbol e)
+        //Año de fundacion del equipo con parametrio in
+        //Esta vacio porque el año de fundacion no cambia
+       public void Año(in Int16 año)
         {
-            e=new Futbol();
-            e.Equipo="MAD";
-        }   
-        public void Año(in int año)
-        {
-           
            
         }
+    }
+    class Abreviatura
+    {
+        //Abreviar nombre del equipo mediante pase de parametros Ref
+        public static void CambiaSiglas(ref Equipo e)
+        {
+            e=new Equipo();
+            e.nombre="MAD";
+        }   
         
     }
     class Titulos
@@ -47,19 +47,20 @@ namespace Parametros
         {
            static void Main(string[] args)
            {
+
              int TitulosL=33;
              int TitulosC=13;
              int TotalT;
+             Int16 A=1902;
 
              Titulos.suma(TitulosL,TitulosC,out TotalT);
              Console.WriteLine("Titulos totales del club entre Liga y Champions: "+TotalT);
-
-            
-
-              Futbol Eq=new Futbol();
-              Console.WriteLine("Equipo: "+ Eq.Equipo);
-              Equipo.CambiaSiglas(ref Eq);
-              Console.WriteLine("Abreviacion:"+ Eq.Equipo);
+              Equipo Eq=new Equipo();
+              Console.WriteLine("Equipo: "+ Eq.nombre);
+              Abreviatura.CambiaSiglas(ref Eq);
+              Console.WriteLine("Abreviacion: "+ Eq.nombre);
+              Eq.Año(in A);
+              Console.WriteLine("Año de fundacion: "+ A);
            }
         
        }  
