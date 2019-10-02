@@ -15,3 +15,7 @@ César Humberto López Roblero 19210519
 ### [Tarea 4:Lista de peliculas](https://github.com/CesarHLR/POO/blob/master/ListaPeliculas/Program.cs)
 ### [Tarea 5:Actores](https://github.com/CesarHLR/POO/blob/master/Actores/Program.cs)
 ### [Tarea 6: Pase de parametros](https://github.com/CesarHLR/POO/blob/master/Parametros/Program.cs)
+
+## PRACTICAS EN CLASE
+
+### [Practica padre]
