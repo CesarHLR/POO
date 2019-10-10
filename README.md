@@ -20,3 +20,4 @@ César Humberto López Roblero 19210519
 
 ### [Practica padre](https://github.com/CesarHLR/POO/blob/master/Padre/Program.cs)
 ### [Practica Domino](https://github.com/CesarHLR/POO/blob/master/Domino/Program.cs)
+### [Practica Duracion](https://github.com/CesarHLR/POO/blob/master/Duracion/Program.cs)
