@@ -19,3 +19,4 @@ César Humberto López Roblero 19210519
 ## PRACTICAS EN CLASE
 
 ### [Practica padre](https://github.com/CesarHLR/POO/blob/master/Padre/Program.cs)
+### [Practica Domino](https://github.com/CesarHLR/POO/tree/master/Domino)
