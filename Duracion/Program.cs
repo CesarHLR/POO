@@ -25,14 +25,14 @@ namespace Duracion
        }
        public void conversionSeg()
        {
-            int S;
+           int S;
             S=(Horas*3600)+(Minutos*60)+Segundos;
             Console.WriteLine("Segundos: {0}", S);
        }
        public void conversionMin()
        {
            int M;
-           M=(Horas*60)+(Segundos/60)+Minutos;
+           M=(Horas*60)+Minutos+(Segundos/60);
            Console.WriteLine("Minutos: {0}",M);
        }
        
