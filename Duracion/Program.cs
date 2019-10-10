@@ -15,22 +15,7 @@ namespace Duracion
             this.Segundos=S;
             this.Minutos=M;
         }
-        //Constructor segundos
-        public Duracion(int S)
-        {
-            this.Segundos=S;
-
-            Horas=(int) S/3600;
-            Minutos=(int)(S-(Horas*3600))/60;
-            Segundos=(int)S-(Horas*3600)-(Minutos*60);
-        }
-        //Imprimir de seg a Hrs, min y seg
-        public void imprimeSaHMS()
-        {
-            Console.WriteLine("{0}:{1}:{2} hrs",Horas,Minutos,Segundos);
-        }
-      
-       //Metodo para imprimir hrs, min y seg
+         //Metodo para imprimir hrs, min y seg
         public void imprimeHMS()
        {
         Console.WriteLine("{0}:{1}:{2} hrs",Horas,Minutos, Segundos);
@@ -49,19 +34,38 @@ namespace Duracion
            M=(Horas*60)+Minutos+(Segundos/60);
            Console.WriteLine("Hora en Minutos: {0}",M);
        }
+        //Constructor segundos
+        public Duracion(int S)
+        {
+            this.Segundos=S;
+
+            Horas=(int) S/3600;
+            Minutos=(int)(S-(Horas*3600))/60;
+            Segundos=(int)S-(Horas*3600)-(Minutos*60);
+        }
+        //Imprimir de seg a Hrs, min y seg
+        public void imprimeSaHMS()
+        {
+            Console.WriteLine("{0}:{1}:{2} hrs",Horas,Minutos,Segundos);
+        }
+      
+      
     }
+
     class Program
     {
         static void Main(string[] args)
         {
-            //Crear objeto de la clase
-           //Duracion hms=new Duracion(8,30,50);
-           //hms.imprimeHMS();
-           //hms.conversionSeg();
-           //hms.conversionMin();
+           //Crear objeto de la clase
+           Duracion hms=new Duracion(8,30,50);
+           hms.imprimeHMS();
+           hms.conversionSeg();
+           hms.conversionMin();
 
-           Duracion shms=new Duracion(7000);
-           shms.imprimeSaHMS();
+           Duracion SaHMS=new Duracion(7000);
+           Console.WriteLine("7000 segundos equivalen a: ");
+           SaHMS.imprimeSaHMS();
+
         }
     }
 }
