@@ -14,41 +14,54 @@ namespace Duracion
             this.Horas=H;
             this.Segundos=S;
             this.Minutos=M;
-            
-            
         }
-       
-       //Metodo para imprimir
-       public void imprimeHMS()
+        //Constructor segundos
+        public Duracion(int S)
+        {
+            this.Segundos=S;
+
+            Horas=(int) S/3600;
+            Minutos=(int)(S-(Horas*3600))/60;
+            Segundos=(int)S-(Horas*3600)-(Minutos*60);
+        }
+        //Imprimir de seg a Hrs, min y seg
+        public void imprimeSaHMS()
+        {
+            Console.WriteLine("{0}:{1}:{2} hrs",Horas,Minutos,Segundos);
+        }
+      
+       //Metodo para imprimir hrs, min y seg
+        public void imprimeHMS()
        {
         Console.WriteLine("{0}:{1}:{2} hrs",Horas,Minutos, Segundos);
        }
+       //Metodo convertir la hora a segundos
        public void conversionSeg()
        {
            int S;
             S=(Horas*3600)+(Minutos*60)+Segundos;
-            Console.WriteLine("Segundos: {0}", S);
+            Console.WriteLine("Hora en Segundos: {0}", S);
        }
+       //Metodo convertir la hora a minutos
        public void conversionMin()
        {
            int M;
            M=(Horas*60)+Minutos+(Segundos/60);
-           Console.WriteLine("Minutos: {0}",M);
+           Console.WriteLine("Hora en Minutos: {0}",M);
        }
-       
     }
-
     class Program
     {
         static void Main(string[] args)
         {
             //Crear objeto de la clase
-           Duracion hms=new Duracion(8,30,50);
-           hms.imprimeHMS();
-           hms.conversionSeg();
-           hms.conversionMin();
+           //Duracion hms=new Duracion(8,30,50);
+           //hms.imprimeHMS();
+           //hms.conversionSeg();
+           //hms.conversionMin();
 
-           
+           Duracion shms=new Duracion(7000);
+           shms.imprimeSaHMS();
         }
     }
 }
