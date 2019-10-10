@@ -8,8 +8,6 @@ namespace Duracion
        public int Minutos;
        public int Segundos;
 
-       
-        
         //Constructor
         public Duracion(int H, int M, int S )
         {
@@ -23,18 +21,19 @@ namespace Duracion
        //Metodo para imprimir
        public void imprimeHMS()
        {
-        Console.WriteLine("Horas: {0} Minutos: {1} Segundos: {2}",Horas,Minutos, Segundos);
+        Console.WriteLine("{0}:{1}:{2} hrs",Horas,Minutos, Segundos);
        }
-       public int Seg(int H,int M, int S,int ST)
-       { 
-         H=H*3600;
-         M=M*60;
-         ST=H+S+M;
-
-       }
-       public void imprimeS()
+       public void conversionSeg()
        {
-            Console.WriteLine("Segundos: {0}", ST);
+            int S;
+            S=(Horas*3600)+(Minutos*60)+Segundos;
+            Console.WriteLine("Segundos: {0}", S);
+       }
+       public void conversionMin()
+       {
+           int M;
+           M=(Horas*60)+(Segundos/60)+Minutos;
+           Console.WriteLine("Minutos: {0}",M);
        }
        
     }
@@ -45,9 +44,11 @@ namespace Duracion
         {
             //Crear objeto de la clase
            Duracion hms=new Duracion(8,30,50);
-           //hms.imprimeHMS();
+           hms.imprimeHMS();
+           hms.conversionSeg();
+           hms.conversionMin();
 
-           hms.Seg();
+           
         }
     }
 }
