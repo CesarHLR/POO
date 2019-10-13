@@ -23,10 +23,11 @@ namespace Duracion
        //Metodo convertir la hora a segundos
        public void conversionSeg()
        {
-           int S;
-            S=(Horas*3600)+(Minutos*60)+Segundos;
+          int S;
+          S=(Horas*3600)+(Minutos*60)+Segundos;
             Console.WriteLine("Hora en Segundos: {0}", S);
        }
+    
        //Metodo convertir la hora a minutos
        public void conversionMin()
        {
@@ -48,10 +49,7 @@ namespace Duracion
         {
             Console.WriteLine("{0}:{1}:{2} hrs",Horas,Minutos,Segundos);
         }
-      
-      
     }
-
     class Program
     {
         static void Main(string[] args)
@@ -65,7 +63,6 @@ namespace Duracion
            Duracion SaHMS=new Duracion(7000);
            Console.WriteLine("7000 segundos equivalen a: ");
            SaHMS.imprimeSaHMS();
-
         }
     }
 }
