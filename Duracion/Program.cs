@@ -49,6 +49,20 @@ namespace Duracion
         {
             Console.WriteLine("{0}:{1}:{2} hrs",Horas,Minutos,Segundos);
         }
+        //Sumar duraciones
+        public static Duracion operator +(Duracion hms, Duracion SaHMS)
+        {
+            int S=0;
+
+            S= ((hms.Horas+SaHMS.Horas)*3600)+((hms.Minutos+SaHMS.Minutos)*60)+(hms.Segundos+SaHMS.Segundos);
+
+            return new Duracion(S);     
+        }
+        //Imprimir suma
+        public void imprimeSuma()
+        {
+            Console.WriteLine("La suma es: {0}:{1}:{2} hrs",Horas,Minutos,Segundos);
+        }
     }
     class Program
     {
@@ -63,6 +77,11 @@ namespace Duracion
            Duracion SaHMS=new Duracion(7000);
            Console.WriteLine("7000 segundos equivalen a: ");
            SaHMS.imprimeSaHMS();
+
+           Duracion Suma;
+           Suma=hms+SaHMS;
+           Suma.imprimeSuma();
+
         }
     }
 }
