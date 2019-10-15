@@ -24,3 +24,4 @@ César Humberto López Roblero 19210519
 ### [Practica Domino](https://github.com/CesarHLR/POO/blob/master/Domino/Program.cs)
 ### [Practica Duracion](https://github.com/CesarHLR/POO/blob/master/Duracion/Program.cs)
 ### [Practica Herencia](https://github.com/CesarHLR/POO/blob/master/HerenciaPersona/Program.cs)
+### [Practica Musico](https://github.com/CesarHLR/POO/blob/master/Musico/Program.cs)
