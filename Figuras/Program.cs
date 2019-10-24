@@ -36,7 +36,7 @@ namespace Figuras
     {
         static void Main(string[] args)
         {
-            List<Figura>Figuras=new List<Figura>();
+            List<Figura>Figuras=new List<Figura>(); 
             Figuras.Add(new Rectangulo)
         }
     }
