@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Icompara
 {
-    class Persona
+    class Persona:IComparable
     {
         int id;
         string nombre;
@@ -12,11 +12,15 @@ namespace Icompara
             this.id=id;
             this.nombre=nombre;
         }
-    /*public override string ToString()
+    public override string ToString()
     {
         return string.Format("{0},{1}",id,nombre);
-    }*/
-}
+    }
+    public Int32 CompareTo(Object o)
+    {
+      return this.id.CompareTo(((Persona)o).id);
+    }
+    }
     class Program
     {
         static void Main(string[] args)
@@ -29,7 +33,13 @@ namespace Icompara
             {
                 Console.WriteLine(p);
             }
-
+            Console.WriteLine("------");
+            pers.Sort();
+              foreach(Persona p in pers)
+            {
+                Console.WriteLine(p);
+            }
+          
         }
     }
 }
