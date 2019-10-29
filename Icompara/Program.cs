@@ -33,7 +33,7 @@ namespace Icompara
             {
                 Console.WriteLine(p);
             }
-            Console.WriteLine("------");
+            Console.WriteLine("Lista ordenada por id");
             pers.Sort();
               foreach(Persona p in pers)
             {
