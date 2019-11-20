@@ -2,7 +2,7 @@
 
 namespace Stack
 {
-    public class Stack<T>
+    public class Stack < T >
     {
         readonly int tamaño;
         int pila=0;
@@ -15,8 +15,27 @@ namespace Stack
         }
         public void Push(T item)
         {
-            
+            if(pila >= tamaño)
+            {
+              throw new StackOverflowException();
+              items[pila]=item;
+              pila++;  
+            }
         }
+        public T Pop()
+        {
+            pila--;
+            if(pila>=0)
+            {
+                return items[pila];
+            }
+            else
+            {
+                pila=0;
+                throw new InvalidOperationException("Stack vacio");
+            }
+        }
+    
     }
     class Program
     {
