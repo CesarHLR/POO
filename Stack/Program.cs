@@ -20,8 +20,7 @@ namespace Stack
               throw new StackOverflowException();
             }
               items[pila]=item;
-              pila++;  
-            
+              pila++;      
         }
         public T Pop()
         {
@@ -36,7 +35,6 @@ namespace Stack
                 throw new InvalidOperationException("Stack vacio");
             }
         }
-    
     }
     class Program
     {
