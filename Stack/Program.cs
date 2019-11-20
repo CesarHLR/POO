@@ -43,8 +43,11 @@ namespace Stack
             Stack<string> Lista=new Stack<string>(3);
             Lista.Push("Cesar");
             Lista.Push(" ");
-            Lista.Push("Humberto");
-            Console.WriteLine(Lista.Pop()+Lista.Pop()+Lista.Pop());
+            Lista.Push("Lopez");
+            for(int i = 0; i < 3; i++) 
+            {
+				Console.Write(Lista.Pop());
+			}
         }
     }
 }
