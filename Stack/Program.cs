@@ -18,9 +18,10 @@ namespace Stack
             if(pila >= tamaño)
             {
               throw new StackOverflowException();
+            }
               items[pila]=item;
               pila++;  
-            }
+            
         }
         public T Pop()
         {
@@ -41,7 +42,11 @@ namespace Stack
     {
         static void Main(string[] args)
         {
-            
+            Stack<string> Lista=new Stack<string>(3);
+            Lista.Push("Cesar");
+            Lista.Push(" ");
+            Lista.Push("Humberto");
+            Console.WriteLine(Lista.Pop()+Lista.Pop()+Lista.Pop());
         }
     }
 }
