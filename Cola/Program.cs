@@ -47,9 +47,9 @@ namespace Cola
 			Lista.Push("Cesar");
 			Lista.Push(" ");
 			Lista.Push("Lopez");
-			for(int i = 0; i < 3; i++) 
-            {
-			 Console.Write(Lista.Pop());
+			for(int i = 0; i < 3; i++)
+			{
+				Console.Write(Lista.Pop());
 			}
 		}
 	}
