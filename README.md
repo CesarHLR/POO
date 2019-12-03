@@ -17,6 +17,8 @@ César Humberto López Roblero 19210519
 ### [Tarea 5:Actores](https://github.com/CesarHLR/POO/blob/master/Actores/Program.cs)
 ### [Tarea 6: Pase de parametros](https://github.com/CesarHLR/POO/blob/master/Parametros/Program.cs)
 ### [Tarea 7: Juego de la vida](https://github.com/CesarHLR/GameOfLifeHacktoberfest/blob/master/LopezRoblero/Program.cs)
+### [Tarea 8: Stack](https://github.com/CesarHLR/POO/blob/master/Stack/Program.cs)
+### [Tarea 9: Cola](https://github.com/CesarHLR/POO/blob/master/Cola/Program.cs)
 
 ## PRACTICAS EN CLASE
 
