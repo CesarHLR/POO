@@ -20,6 +20,10 @@ namespace Proyecto5y6
 			Likes=l;
 		}
 	}
+    class ProductoDB
+	{
+        
+    }
     class Program
     {
         static void Main(string[] args)
