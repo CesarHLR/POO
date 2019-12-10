@@ -92,6 +92,24 @@ namespace Proyecto5y6
 				Console.WriteLine("[ERROR] Hay error en la escritura ("+ex.Message+")");
 			}
 		}
+        public void LeerProductosBIN(string archivo)
+		{
+			try 
+            {
+				// Use la clase filestream para abrir al archivo tipo binario
+				FileStream Fs2=new FileStream(archivo,FileMode.Open,FileAccess.Read);
+				using(BinaryReader binIn=new BinaryReader(Fs2)) {
+					while(binIn.PeekChar() != -1) 
+					{
+						productos.Add(new Producto(binIn.ReadString(), binIn.ReadString(), binIn.ReadDecimal(), binIn.ReadInt32(), binIn.ReadInt32()));
+					}
+				}
+			} catch(IOException ex) {
+				Console.WriteLine("[ERROR] No se pudo abrir el archivo ("+ex.Message+")");
+			} catch(Exception ex) {
+				Console.WriteLine("[ERROR] Hay error en la escritura ("+ex.Message+")");
+			}
+		}
     }
     class Program
     {
