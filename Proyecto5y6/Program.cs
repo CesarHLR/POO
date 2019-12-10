@@ -141,8 +141,10 @@ namespace Proyecto56
 			Ejem1.productos.Add(new Producto("S4TSDS", "paleta",12, 5, 17));
 			Ejem1.EscribeProductosTXT("productos.txt");
 			Ejem1.EscribeProductosBIN("productos.bin");*/
-			Ejem1.LeerProductosTXT("productos.txt");
-			Ejem1.OrdenarLikes();
+			//Ejem1.LeerProductosTXT("productos.txt");
+            //Ejem1.LeerProductosBIN("productos.bin");
+			//Ejem1.OrdenarLikes();
+            //Ejem1.GetDepartment(5);
 			
 		}
 	}
