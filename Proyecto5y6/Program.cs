@@ -42,6 +42,29 @@ namespace Proyecto5y6
 				Console.WriteLine("[ERROR] Hay error en la escritura ("+ex.Message+")");
 			}
 		}
+        public void LeerProductosTXT(string archivo)
+		{
+			try {
+				// Use la clase filestream para abrir al archivo
+				FileStream Fs2=new FileStream(archivo,FileMode.Open,FileAccess.Read);
+				using(StreamReader txtOut=new StreamReader(Fs2)) {
+					string renglon;
+					//Es para leer de renglon en renglon
+					//Split: Sirve para dividir una cadena en partes utilizando un caracter delimitador
+					while((renglon = txtOut.ReadLine()) != null) 
+					{
+						string[] ren = renglon.Split("▬");
+						if(renglon.Length < 5)
+							throw new Exception("Formato  incorrecto");
+						productos.Add(new Producto(ren[0], ren[1], decimal.Parse(ren[2]), int.Parse(ren[3]), int.Parse(ren[4])));
+					}
+				}
+			} catch(IOException ex) {
+				Console.WriteLine("[ERROR] No se pudo abrir el archivo ("+ex.Message+")");
+			} catch(Exception ex) {
+				Console.WriteLine("[ERROR] Hay error en la escritura ("+ex.Message+")");
+			}
+		}
     }
     class Program
     {
