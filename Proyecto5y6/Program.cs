@@ -55,8 +55,13 @@ namespace Proyecto5y6
 					{
 						string[] ren = renglon.Split("▬");
 						if(renglon.Length < 5)
-							throw new Exception("Formato  incorrecto");
-						productos.Add(new Producto(ren[0], ren[1], decimal.Parse(ren[2]), int.Parse(ren[3]), int.Parse(ren[4])));
+                        {
+                           throw new Exception("Formato  incorrecto");
+                        }
+                        else
+                        {
+                          productos.Add(new Producto(ren[0], ren[1], decimal.Parse(ren[2]), int.Parse(ren[3]), int.Parse(ren[4])));
+                        }	
 					}
 				}
 			} catch(IOException ex) {
