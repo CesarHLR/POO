@@ -19,6 +19,7 @@ César Humberto López Roblero 19210519
 ### [Tarea 7: Juego de la vida](https://github.com/CesarHLR/GameOfLifeHacktoberfest/blob/master/LopezRoblero/Program.cs)
 ### [Tarea 8: Stack](https://github.com/CesarHLR/POO/blob/master/Stack/Program.cs)
 ### [Tarea 9: Cola](https://github.com/CesarHLR/POO/blob/master/Cola/Program.cs)
+### [Practica 5 y 6](https://github.com/CesarHLR/POO/blob/ade45391dd0b7d20d24bd9f533be005a93c05527/Proyecto56/Program.cs)
 
 ## PRACTICAS EN CLASE
 
