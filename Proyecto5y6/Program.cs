@@ -70,6 +70,28 @@ namespace Proyecto5y6
 				Console.WriteLine("[ERROR] Hay error en la escritura ("+ex.Message+")");
 			}
 		}
+        public void EscribeProductosBIN(string archivo)
+		{
+			try {
+				//use la clase filestream para abrir el archivo o crearlo en caso que no exista tipo binario
+				FileStream Fs=new FileStream(archivo,FileMode.OpenOrCreate,FileAccess.Write);
+				using(BinaryWriter binOut=new BinaryWriter(Fs))
+				{
+					foreach(Producto p in productos)
+					{
+						binOut.Write(p.Codigo);
+						binOut.Write(p.Descripcion);
+						binOut.Write(p.Precio);
+						binOut.Write(p.Departamento);
+						binOut.Write(p.Likes);
+					}
+				}
+			} catch(IOException ex) {
+				Console.WriteLine("[ERROR] No se pudo abrir el archivo ("+ex.Message+")");
+			} catch(Exception ex) {
+				Console.WriteLine("[ERROR] Hay error en la escritura ("+ex.Message+")");
+			}
+		}
     }
     class Program
     {
