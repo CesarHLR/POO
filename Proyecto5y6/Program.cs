@@ -34,7 +34,7 @@ namespace Proyecto56
 				{
 					foreach(Producto p in productos)
 					{
-						txtOut.WriteLine("{0}▬{1}▬{2}▬{3}▬{4}",p.Codigo,p.Descripcion,p.Precio,p.Departamento,p.Likes);
+						txtOut.WriteLine("Codigo: {0}▬Descripcion: {1}▬Precio: {2}▬Departamento: {3}▬Likes: {4}",p.Codigo,p.Descripcion,p.Precio,p.Departamento,p.Likes);
 					}
 				}
 			} catch(IOException ex) {
@@ -49,7 +49,8 @@ namespace Proyecto56
 				// Abre el archivo
 				FileStream Fs2=new FileStream(archivo,FileMode.Open,FileAccess.Read);
 				// 
-				using(StreamReader txtOut=new StreamReader(Fs2)) {
+				using(StreamReader txtOut=new StreamReader(Fs2)) 
+                {
 					string renglon;
 					//Es para leer de renglon en renglon
 					//Split: es para partir el string
@@ -134,12 +135,12 @@ namespace Proyecto56
 		static void Main(string[] args)
 		{
 			ProductoDB Ejem1=new ProductoDB();
-/*			Ejem1.productos.Add(new Producto("S4TSDS", "Soda",12, 1, 16));
+			Ejem1.productos.Add(new Producto("S4TSDS", "Soda",12, 1, 16));
 			Ejem1.productos.Add(new Producto("S4TSDS", "Soda",12, 1, 19));
 			Ejem1.productos.Add(new Producto("S4TSDS", "Sabritas",12, 1, 1));
 			Ejem1.productos.Add(new Producto("S4TSDS", "paleta",12, 5, 17));
 			Ejem1.EscribeProductosTXT("productos.txt");
-			Ejem1.EscribeProductosBIN("productos.bin");*/
+			Ejem1.EscribeProductosBIN("productos.bin");
 			Ejem1.LeerProductosTXT("productos.txt");
 			Ejem1.OrdenarLikes();
 			
