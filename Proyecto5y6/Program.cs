@@ -115,7 +115,14 @@ namespace Proyecto5y6
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ProductoDB Ejem=new ProductoDB();
+			Ejem.productos.Add(new Producto("S4TSDS", "Soda",12, 1, 16));
+			Ejem.productos.Add(new Producto("S4TSDS", "Soda",12, 1, 19));
+			Ejem.productos.Add(new Producto("S4TSDS", "Sabritas",12, 1, 1));
+			Ejem.productos.Add(new Producto("S4TSDS", "paleta",12, 5, 17));
+			Ejem.EscribeProductosTXT("productos.txt");
+			Ejem.EscribeProductosBIN("productos.bin");
+			
         }
     }
 }
