@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 
 namespace Proyecto5y6
 {
@@ -110,7 +111,20 @@ namespace Proyecto5y6
 				Console.WriteLine("[ERROR] Hay error en la escritura ("+ex.Message+")");
 			}
 		}
+        public void GetDepartment(int Depto) 
+        {
+			IEnumerable<Producto> pds =
+            from p in productos 
+            where p.Departamento == Depto
+				select p;
+			Console.WriteLine("Se mostraran los productos del departamento: "+Depto);
+			foreach(Producto p in pds) 
+            {
+				Console.WriteLine("{0},{1},{2},{3},{4}",p.Codigo,p.Descripcion,p.Precio,p.Departamento,p.Likes);
+			}
+		}
     }
+
     class Program
     {
         static void Main(string[] args)
@@ -121,9 +135,9 @@ namespace Proyecto5y6
 			Ejem.productos.Add(new Producto("S4TSDS", "Sabritas",12, 1, 1));
 			Ejem.productos.Add(new Producto("S4TSDS", "paleta",12, 5, 17));
 			Ejem.EscribeProductosTXT("productos.txt");
-			Ejem.EscribeProductosBIN("productos.bin");*/
+			Ejem.EscribeProductosBIN("productos.bin");
             Ejem.LeerProductosBIN("productos.bin");
-            Ejem.LeerProductosTXT("productos.txt");
+            Ejem.LeerProductosTXT("productos.txt");*/
 			
         }
     }
